@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+#container-logo{
+    margin-top: -150px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 190px;
+    height: 200px;
+    padding: 60px;
+    color: white;
+    border: solid, 15px, white;
+    box-shadow: inset 0 0 5px white, 0 0 5px white,  0 0 7px white, 0 0 10px red, 0 0 20px white, 0 0 30px white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: balck;
+   /* text-shadow: 0 0 3px yellowgreen, 0 0 5px yellowgreen, 0 0 7px yellow, 0 0 12px yellow; */
+}
+
+.back {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border: solid, 15px, white;
+    box-shadow: inset 0 0 5px white, 0 0 5px white,  0 0 7px red, 0 0 10px red, 0 0 20px red, 0 0 30px red;
+}
+
+.countdown div {
+    padding: 15px 0;
+    text-align: center;
+    border-right: solid 3px white;
+    box-shadow: inset 0 0 20px yellow;
+}
+
+.countdown div:last-child {
+    border-right: none;
+}
+
+.countdown div p {
+    font-weight: 600;
+    font-size: 3rem;
+    color: black;
+    /*text-shadow: 0 0 3px black, 0 0 5px yellow, 0 0 7px black;*/
+}
+
+.countdown div span {
+    color: balck;
+    font-weight: 300;
+}
+
+.notify h2 {
+    color: black;
+    text-align: center;
+    margin: 30px 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    /* text-shadow: 0 0 3px yellowgreen, 0 0 5px yellowgreen, 0 0 7px yellow; */
+}
+
+.form-not {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes parpadeo {
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: parpadeo 4s infinite;
+}
+#container-logo {
+    animation: parpadeo 6s infinite;
+}
+.countdown {
+    animation: parpadeo 5s infinite;
+}
+h2 {
+    animation: parpadeo 3s infinite;
+}
+
